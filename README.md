@@ -13,8 +13,14 @@ This project is a Python-based Tip Calculator that allows users to input a bill 
 - Displays both the tip and the total bill (including the tip), with proper formatting (e.g., two decimal places and a dollar sign).
 
 ### This project is designed to help students demonstrate:
-- Good Programming Style: proper whitespace, naming conventions, use of constants and variables, and out formatting.
-- An understanding of the Software Development Lifecycle: requirements analysis, planning/design with pseudocode and UML diagram, implementation, testing, and release.
+- Good Programming Style: proper whitespace, 
+- Naming conventions, use of constants and variables, and out formatting.
+- An understanding of the Software Development Lifecycle: 
+   * requirements analysis, 
+   * planning/design with pseudocode and UML diagram, 
+   * implementation, 
+   * testing, 
+   * release.
 
 ## Files to Include:
 - tip_calculator.py - actual Python code
