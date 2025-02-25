@@ -8,9 +8,13 @@ This project is a Python-based Tip Calculator that allows users to input a bill 
 ## Project Overview
 ### Students will build a Python program that:
 - Prompts the user for the total bill amount
-- Asks for the desired tip percentage
+   * i.e. 100.00, 85.23, 50.00, etc
+- Asks for the desired tip percentage (e.g. 10, 15, 20, 25)
+   * 10% calculate to float (10 / 100) --> .10, 15% calculate to float (15 / 100) --> .15, etc
 - Calculates the tip amount
+   * bill * tip percent = total tip
 - Displays both the tip and the total bill (including the tip), with proper formatting (e.g., two decimal places and a dollar sign).
+   * Total Bill = bill + total tip
 
 ### This project is designed to help students demonstrate:
 - Good Programming Style: proper whitespace, 
