@@ -1,11 +1,11 @@
-Start:
+START:
 
-#Welcome them 
-PRINT "Welcome to the tip calculator"
+#Welcome 
+PRINT "Welcome to the Tip Calculator"
 
 
-#Ask for their bill amount
-PRINT "Please enter yor Bill Amount: "
+#Ask for Bill Amount
+PRINT "Please enter your Bill Amount: "
 
 
 #Validate
@@ -13,17 +13,15 @@ If Bill Amount <0                   <-- Needs fixing later
     PRINT "Invalid ..."             <-- Needs fixing later
 
 
-#Ask for Tip amount
+#Ask for Tip Amount
 PRINT "Please enter the amount you would like to tip (e.g. 10, 15, 20, 25): "
 
 
-
-#Validate Tip amount
+#Validate Tip Amount
 If Tip Amount (is not percentage)   <-- Needs fixing later
 
 
-#Calculate The amounts
-
+#Calculate the Amounts
 Bill Amount * Tip percentage = Tip Amount
 Total Bill = Bill Amount + Tip Amount
 
@@ -37,7 +35,7 @@ PRINT Total Bill: (e.g., two decimal places and a dollar sign)
 #Thanks
 PRINT "Thank you for using the Tip Calculator"
 
-
+END
 
 
 
