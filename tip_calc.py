@@ -35,5 +35,5 @@ def tip_calculator():
     except ValueError:
         print("Error: Please enter a valid number.")
 
-        if __name__ == "__main__":
-            tip_calculator()
+if __name__ =="__main__":
+    tip_calculator()
