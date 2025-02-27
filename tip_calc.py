@@ -1,9 +1,6 @@
 # tip_calculator.py
 # A simple tip calculator to compute tip amount and total bill
 
-#Welcome 
-
-
 def tip_calculator():
 
     #Welcome
@@ -11,12 +8,13 @@ def tip_calculator():
 
     try:
         #Ask for Input
-        bill_amount = (float(input("Please enter your bill amount: $")))
-        tip_percentage = (float(input("Please enter the percentage you would like to tip (e.g. 10, 15, 20, 25)" )))
+        bill_amount = float(input("Please enter your bill amount: $"))
+        tip_percentage = float(input("Please enter the percentage you would like to tip (e.g. 10, 15, 20, 25)" ))
 
         #Validate
         if bill_amount < 0:
             print("Invalid Input. Must be a Positive number")
+            return
 
         if tip_percentage < 0:
             print("Invalid Input. Must be a Positive number")
@@ -29,12 +27,11 @@ def tip_calculator():
         #Summarize the results 
         print(f"\n Bill Amount: ${bill_amount:.2f}")
         print(f"\n Tip Amount: ${tip_amount:.2f}")
-        print(f"\n Total Bill(With Tip): ${tip_amount:.2f}")
+        print(f"\n Total Bill(With Tip): ${total_bill:.2f}")
 
         #Thanks
         print("Thank you for using the Tip Calculator")
 
-    except ValueError():
-
+    except ValueError:
         if __name__ == "__main__":
             tip_calculator()
