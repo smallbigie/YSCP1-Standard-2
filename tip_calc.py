@@ -4,39 +4,37 @@
 #Welcome 
 
 
-################## MOST OF THIS IS JUST UNFINISHED PSEUDO CODE I COPIED FROM THE txt FILE ##########################
-
 def tip_calculator():
-    print ("Welcome to the Tip Calculator")
 
+    #Welcome
+    print("Welcome to the Tip Calculator")
 
-    #Ask for Bill Amount    #bill_amount
-    "Please enter your Bill Amount: "
+    try:
+        #Ask for Input
+        bill_amount = (float(input("Please enter your bill amount: $")))
+        tip_percentage = (float(input("Please enter the percentage you would like to tip (e.g. 10, 15, 20, 25)" )))
 
+        #Validate
+        if bill_amount < 0:
+            print("Invalid Input. Must be a Positive number")
 
-    #Validate
-    If Bill Amount <0                   <-- Needs fixing later
-        PRINT "Invalid ..."             <-- Needs fixing later
+        if tip_percentage < 0:
+            print("Invalid Input. Must be a Positive number")
+            return
+        
+        #Calculator 
+        tip_amount = bill_amount * (tip_percentage / 100)
+        total_bill = bill_amount + tip_amount
 
+        #Summarize the results 
+        print(f"\n Bill Amount: ${bill_amount:.2f}")
+        print(f"\n Tip Amount: ${tip_amount:.2f}")
+        print(f"\n Total Bill(With Tip): ${tip_amount:.2f}")
 
-    #Ask for Tip Amount     #tip_amount
-    PRINT "Please enter the amount you would like to tip (e.g. 10, 15, 20, 25): "
+        #Thanks
+        print("Thank you for using the Tip Calculator")
 
+    except ValueError():
 
-    #Validate Tip Amount
-    If Tip Amount (is not percentage)   <-- Needs fixing later
-
-
-    #Calculate the Amounts
-    bill_amount * tip_percentage = tip_amount
-    total_bill = bill_amount + tip_amount
-
-
-    #Display Results
-    print bill_amount: (e.g., two decimal places and a dollar sign)
-    print tip_amount: (e.g., two decimal places and a dollar sign)
-    print total_bill: (e.g., two decimal places and a dollar sign)
-
-
-    #Thanks
-    PRINT "Thank you for using the Tip Calculator"
+        if __name__ == "__main__":
+            tip_calculator()

@@ -7,14 +7,13 @@ PRINT "Welcome to the Tip Calculator"
 #Ask for Bill Amount
 PRINT "Please enter your Bill Amount: "
 
+#Ask for Tip Amount
+PRINT "Please enter the amount you would like to tip (e.g. 10, 15, 20, 25): "
+
 
 #Validate
 If Bill Amount <0                   <-- Needs fixing later
     PRINT "Invalid ..."             <-- Needs fixing later
-
-
-#Ask for Tip Amount
-PRINT "Please enter the amount you would like to tip (e.g. 10, 15, 20, 25): "
 
 
 #Validate Tip Amount
